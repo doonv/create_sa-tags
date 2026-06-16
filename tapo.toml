@@ -1,0 +1,5 @@
+[formatting]
+    indent_string = "  "  # Set to "    " or "\t" if preferred
+    indent_entries = true # Indent key-value pairs inside tables
+    indent_tables = true  # Indent subtables under parent tables
+    align_entries = false # Set to true to align '=' signs vertically
