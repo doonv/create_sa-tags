@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:blazing_pickaxe",
+    "create_sa:brass_pickaxe",
+    "create_sa:copper_pickaxe",
+    "create_sa:experience_pickaxe",
+    "create_sa:rose_quartz_pickaxe",
+    "create_sa:zinc_pickaxe"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:brass_leggings",
+    "create_sa:copper_leggings",
+    "create_sa:zinc_leggings"
+  ]
+}

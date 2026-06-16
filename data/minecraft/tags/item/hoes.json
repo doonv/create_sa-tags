@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:brass_hoe",
+    "create_sa:copper_hoe",
+    "create_sa:zinc_hoe"
+  ]
+}

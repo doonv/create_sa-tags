@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:brass_boots",
+    "create_sa:copper_boots",
+    "create_sa:slime_boots",
+    "create_sa:zinc_boots"
+  ]
+}

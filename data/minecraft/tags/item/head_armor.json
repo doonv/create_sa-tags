@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:brass_helmet",
+    "create_sa:copper_helmet",
+    "create_sa:slime_helmet",
+    "create_sa:zinc_helmet"
+  ]
+}

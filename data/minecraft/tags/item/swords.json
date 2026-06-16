@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:blazing_cleaver",
+    "create_sa:brass_sword",
+    "create_sa:copper_sword",
+    "create_sa:experience_sword",
+    "create_sa:rose_quartz_sword",
+    "create_sa:zinc_sword"
+  ]
+}

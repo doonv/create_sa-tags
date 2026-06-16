@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "create_sa:blazing_axe",
+    "create_sa:brass_axe",
+    "create_sa:copper_axe",
+    "create_sa:experience_axe",
+    "create_sa:rose_quartz_axe",
+    "create_sa:zinc_axe"
+  ]
+}
