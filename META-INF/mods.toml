@@ -3,16 +3,23 @@ loaderVersion = '[40,)'
 license = 'Apache-2.0'
 showAsResourcePack = false
 issueTrackerURL = 'https://github.com/doonv/create_sa-tags/issues'
-mods = [
-    { modId = "create_sa_tags", version = "1.0.0", authors = "Doonv", displayName = "Create Stuff 'N Additions Tag Fixes", description = "Adds missing tags to Create Stuff 'N Additions. Fixes enchanting, Dynamic Crosshair, and more.", logoFile = "pack.png", updateJSONURL = "https://modrinth.com/project/UDScyrfA/updates.json", displayURL = "https://modrinth.com/project/UDScyrfA" },
-]
+
+[[mods]]
+    modId = "create_sa_tags"
+    version = "1.0.0"
+    authors = "Doonv"
+    displayName = "Create Stuff 'N Additions Tag Fixes"
+    description = "Adds missing tags to Create Stuff 'N Additions. Fixes enchanting, Dynamic Crosshair, and more."
+    logoFile = "pack.png"
+    updateJSONURL = "https://modrinth.com/project/UDScyrfA/updates.json"
+    displayURL = "https://modrinth.com/project/UDScyrfA"
 
 [[dependencies.create_sa_tags]]
     modId = "minecraft"
     mandatory = true
-    versionRange = "[1.20.1,1.21)"
+    versionRange = "1.20.1"
     ordering = "NONE"
-    side = "BOTH"
+    side = "SERVER"
 
 [[dependencies.create_sa_tags]]
     modId = "create_sa"
