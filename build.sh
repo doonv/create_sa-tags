@@ -3,12 +3,14 @@
 
 set -euo pipefail
 
-VERSION="1.0.0"
+VERSION="${1:-${VERSION:-1.0.0}}"
 outfile() { echo "$BUILD/create_sa-tags-$VERSION+$1"; }
 
 ROOT="$(cd "$(dirname "$0")" && pwd)"
 BUILD="$ROOT/build"
 TEMP="$(mktemp -d)"
+
+mkdir -p $BUILD
 
 cleanup() { rm -rf "$TEMP"; }
 trap cleanup EXIT
@@ -47,10 +49,14 @@ package "$TEMP/dp-1201" "1.20.1" "zip"
 
 # Mods
 prepare "$TEMP/mod-1211"
-cp -r "$ROOT/META-INF" "$TEMP/mod-1211"
+mkdir -p "$TEMP/mod-1211/META-INF"
+cp "$ROOT/META-INF/neoforge.mods.toml" "$TEMP/mod-1211/META-INF/neoforge.mods.toml"
+sed -i 's/version = ".*"/version = "'"$VERSION"'"/' "$TEMP/mod-1211/META-INF/neoforge.mods.toml"
 package "$TEMP/mod-1211" "1.21.1" "jar"
 
 prepare "$TEMP/mod-1201"
-cp -r "$ROOT/META-INF" "$TEMP/mod-1201"
+mkdir -p "$TEMP/mod-1201/META-INF"
+cp "$ROOT/META-INF/mods.toml" "$TEMP/mod-1201/META-INF/mods.toml"
+sed -i 's/version = ".*"/version = "'"$VERSION"'"/' "$TEMP/mod-1201/META-INF/mods.toml"
 convert_to_1201 "$TEMP/mod-1201"
 package "$TEMP/mod-1201" "1.20.1" "jar"
